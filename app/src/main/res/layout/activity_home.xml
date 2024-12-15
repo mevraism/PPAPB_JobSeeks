@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:background="@drawable/shape"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="80dp"
+            android:src="@drawable/baseline_work_24"
+            android:layout_centerInParent="true"
+            android:layout_height="80dp"/>
+        <TextView
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="32sp"
+            android:layout_width="wrap_content"
+            android:text="JobSeeks"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/imageView"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_below="@id/relative"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edName"
+            android:background="@drawable/ed_shape"
+            android:drawablePadding="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="10dp"
+            android:hint="Enter Job Name"
+            android:textColor="@color/deep_blue"
+            android:textColorHint="@color/deep_blue"
+            android:drawableLeft="@drawable/baseline_person_24"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"/>
+
+        <EditText
+            android:id="@+id/edCompany"
+            android:background="@drawable/ed_shape"
+            android:drawablePadding="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="12dp"
+            android:paddingLeft="10dp"
+            android:hint="Enter Company Name"
+            android:textColor="@color/deep_blue"
+            android:textColorHint="@color/deep_blue"
+            android:drawableLeft="@drawable/baseline_home_work_24"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"/>
+        <EditText
+            android:id="@+id/edDescription"
+            android:background="@drawable/ed_shape"
+            android:drawablePadding="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="12dp"
+            android:paddingLeft="10dp"
+            android:hint="Enter Job Description"
+            android:textColor="@color/deep_blue"
+            android:textColorHint="@color/deep_blue"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"/>
+        <EditText
+            android:id="@+id/edRequirements"
+            android:background="@drawable/ed_shape"
+            android:drawablePadding="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="12dp"
+            android:paddingLeft="10dp"
+            android:hint="Enter Requirements"
+            android:textColor="@color/deep_blue"
+            android:textColorHint="@color/deep_blue"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"/>
+        <EditText
+            android:id="@+id/edBenefit"
+            android:background="@drawable/ed_shape"
+            android:drawablePadding="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="12dp"
+            android:paddingLeft="10dp"
+            android:hint="Enter Benefit"
+            android:textColor="@color/deep_blue"
+            android:textColorHint="@color/deep_blue"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"/>
+        <EditText
+            android:id="@+id/edSalary"
+            android:background="@drawable/ed_shape"
+            android:drawablePadding="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="12dp"
+            android:paddingLeft="10dp"
+            android:hint="Enter Salary Range"
+            android:textColor="@color/deep_blue"
+            android:textColorHint="@color/deep_blue"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"/>
+        <Button
+            android:id="@+id/addBtn"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="ADD JOB"
+            android:background="@drawable/btn_shape"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="30dp"
+            android:clickable="true"
+            android:layout_marginBottom="10dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"/>
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        app:backgroundTint="@color/blue_white"
+        android:id="@+id/floatingId"
+        app:tint="@color/deep_blue"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:layout_marginRight="40dp"
+        android:src="@drawable/baseline_recycling_24"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

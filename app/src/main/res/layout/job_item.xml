@@ -1,0 +1,96 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="8dp"
+    app:cardCornerRadius="12dp"
+    android:layout_marginBottom="8dp"
+    android:layout_height="180dp">
+
+    <RelativeLayout
+        android:background="@drawable/btn_shape"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/tvName"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/deep_blue"
+            android:layout_marginLeft="16dp"
+            android:layout_width="wrap_content"
+            android:text="Front-End Developer"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvCompany"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:textColor="#094A5F"
+            android:layout_marginLeft="16dp"
+            android:layout_width="wrap_content"
+            android:text="Tiktok"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvName" />
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#094A5F"
+            android:layout_marginLeft="16dp"
+            android:layout_width="wrap_content"
+            android:text="Entry Level | Full-Time | Work from Bandung, Jawa Barat"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvCompany" />
+
+        <LinearLayout
+            android:layout_margin="4dp"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:id="@+id/update"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/deep_blue"
+                android:layout_marginLeft="16dp"
+                android:layout_width="wrap_content"
+                android:text="Update"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                android:background="@drawable/ed_shape"
+                android:padding="10dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:id="@+id/delete"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/deep_blue"
+                android:layout_marginLeft="16dp"
+                android:layout_width="wrap_content"
+                android:text="Delete"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                android:background="@drawable/ed_shape"
+                android:padding="10dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

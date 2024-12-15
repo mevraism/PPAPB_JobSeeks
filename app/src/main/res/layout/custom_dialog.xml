@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/btn_shape"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+
+
+
+        <EditText
+            android:id="@+id/edName"
+            android:background="@drawable/ed_shape"
+            android:drawablePadding="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="10dp"
+            android:hint="Enter Job Name"
+            android:textColor="@color/deep_blue"
+            android:textColorHint="@color/deep_blue"
+            android:drawableLeft="@drawable/baseline_person_24"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"/>
+
+        <EditText
+            android:id="@+id/edCompany"
+            android:background="@drawable/ed_shape"
+            android:drawablePadding="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="12dp"
+            android:paddingLeft="10dp"
+            android:hint="Enter Company Name"
+            android:textColor="@color/deep_blue"
+            android:textColorHint="@color/deep_blue"
+            android:drawableLeft="@drawable/baseline_home_work_24"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"/>
+        <EditText
+            android:id="@+id/edDescription"
+            android:background="@drawable/ed_shape"
+            android:drawablePadding="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="12dp"
+            android:paddingLeft="10dp"
+            android:hint="Enter Job Description"
+            android:textColor="@color/deep_blue"
+            android:textColorHint="@color/deep_blue"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+        <EditText
+            android:id="@+id/edRequirements"
+            android:background="@drawable/ed_shape"
+            android:drawablePadding="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="12dp"
+            android:paddingLeft="10dp"
+            android:hint="Enter Requirements"
+            android:textColor="@color/deep_blue"
+            android:textColorHint="@color/deep_blue"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+        <EditText
+            android:id="@+id/edBenefit"
+            android:background="@drawable/ed_shape"
+            android:drawablePadding="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="12dp"
+            android:paddingLeft="10dp"
+            android:hint="Enter Benefit"
+            android:textColor="@color/deep_blue"
+            android:textColorHint="@color/deep_blue"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+        <EditText
+            android:id="@+id/edSalary"
+            android:background="@drawable/ed_shape"
+            android:drawablePadding="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="12dp"
+            android:paddingLeft="10dp"
+            android:hint="Enter Salary Range"
+            android:textColor="@color/deep_blue"
+            android:textColorHint="@color/deep_blue"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+
+
+
+
+        <Button
+            android:id="@+id/customBtn"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="UPDATE JOB"
+            android:background="@drawable/btn_shape"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="30dp"
+            android:clickable="true"
+            android:layout_marginBottom="20dp"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
