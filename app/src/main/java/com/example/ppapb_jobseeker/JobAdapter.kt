@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 
 class JobAdapter(
     private val jobs: List<Job>,
-    private val onUpdateClick: (Job) -> Unit
+    private val onItemClick: (Job) -> Unit
 ) : RecyclerView.Adapter<JobAdapter.JobViewHolder>() {
 
     inner class JobViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -24,11 +24,11 @@ class JobAdapter(
             tvDescription.text = job.description
 
             updateBtn.setOnClickListener {
-                onUpdateClick(job)
+                onItemClick(job)
             }
 
             deleteBtn.setOnClickListener {
-                // Handle delete logic here
+                onItemClick(job)
             }
         }
     }

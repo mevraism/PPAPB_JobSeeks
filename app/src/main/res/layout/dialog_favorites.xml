@@ -6,14 +6,28 @@
     android:padding="16dp"
     android:minHeight="400dp">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Favorite Jobs"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:textColor="@color/deep_blue"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Favorite Jobs"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/deep_blue"/>
+
+        <Button
+            android:id="@+id/btnClearAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="Clear All"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/deep_blue"/>
+    </RelativeLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvFavorites"

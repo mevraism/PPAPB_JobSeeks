@@ -16,4 +16,7 @@ interface FavoriteJobDao {
 
     @Query("SELECT EXISTS(SELECT 1 FROM favorite_jobs WHERE name = :name AND company = :company)")
     suspend fun isFavorite(name: String, company: String): Boolean
+
+    @Query("DELETE FROM favorite_jobs")
+    suspend fun deleteAll()
 } 

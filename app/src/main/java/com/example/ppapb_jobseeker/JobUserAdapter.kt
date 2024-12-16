@@ -27,9 +27,7 @@ class JobUserAdapter(
             detailBtn.setOnClickListener {
                 val context = itemView.context
                 val intent = Intent(context, JobDetailActivity::class.java).apply {
-                    putExtra("job_name", job.name)
-                    putExtra("company", job.company)
-                    putExtra("description", job.description)
+                    putExtra("job_id", job.id)
                 }
                 context.startActivity(intent)
             }
